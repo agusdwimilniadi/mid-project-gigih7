@@ -1,0 +1,11 @@
+{
+  "name": "mid-project-agusdm",
+  "version": "1.0.0",
+  "description": "Mid Project untuk Gigih kelas Fullstack Engineering 7",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Agus Dwi Milniadi",
+  "license": "ISC"
+}
