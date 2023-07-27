@@ -613,6 +613,7 @@ Input comment and returns the new object comment.
   None
 - **Headers**
   Content-Type: application/json
+  Authorization: Bearer `<OAuth Token>`
 - **Data Params**
 
 ```
