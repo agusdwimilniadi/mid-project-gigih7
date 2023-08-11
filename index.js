@@ -6,6 +6,7 @@ const videoRouter = require('./routes/video');
 const productRouter = require('./routes/product');
 const commentRouter = require('./routes/coments');
 const authRouter = require('./routes/auth');
+let cors = require('cors');
 
 const moment = require('moment');
 const port = process.env.PORT || 3000;
@@ -25,6 +26,8 @@ database.once('connected', () => {
 });
 // Body Parser
 const app = express();
+app.use(cors());
+
 app.use(
   bodyParser.urlencoded({
     extended: true,
