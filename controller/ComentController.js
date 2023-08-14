@@ -42,7 +42,6 @@ const getCommentByVideoId = async (videoId) => {
     const response = await ComentModel.find({
       video: new mongoose.Types.ObjectId(videoId),
     });
-    console.log('Response ', response);
     return response;
   } catch (error) {
     throw new Error(error.message);

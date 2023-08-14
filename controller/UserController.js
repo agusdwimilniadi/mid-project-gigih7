@@ -39,12 +39,16 @@ const authLogin = async ({ email, password }) => {
       { userId: user._id, username: user.username },
       process.env.JWT_SECRET,
       {
-        expiresIn: '1h', // Token expires in 1 hour
+        expiresIn: '24h', // Token expires in 1 hour
       }
     );
     return {
       token,
       expiresIn: '1h',
+      user: {
+        username: user.username,
+        email: user.email,
+      },
     };
   } catch (error) {
     throw error;
